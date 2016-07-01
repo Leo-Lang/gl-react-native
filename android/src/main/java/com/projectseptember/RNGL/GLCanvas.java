@@ -474,7 +474,15 @@ public class GLCanvas extends GLSurfaceView
         ReadableMapKeySetIterator iterator = data.uniforms.keySetIterator();
         while (iterator.hasNextKey()) {
             String uniformName = iterator.nextKey();
-            int type = uniformTypes.get(uniformName);
+            int type;
+            int size;
+            try {
+                 type = uniformTypes.get(uniformName);
+                 size = uniformSizes.get(uniformName);
+            }catch (Exception e){
+                e.printStackTrace();
+                continue;
+            }
 
             ReadableMap dataUniforms = data.uniforms;
 
