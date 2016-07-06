@@ -475,10 +475,8 @@ public class GLCanvas extends GLSurfaceView
         while (iterator.hasNextKey()) {
             String uniformName = iterator.nextKey();
             int type;
-            int size;
             try {
                  type = uniformTypes.get(uniformName);
-                 size = uniformSizes.get(uniformName);
             }catch (Exception e){
                 e.printStackTrace();
                 continue;

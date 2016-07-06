@@ -4,26 +4,26 @@ GlslTransitions.forEach(function (t) {
   byName[t.name] = t;
 });
 const transitions = [
-  [ "directionalwipe", function () {
-    const angle = Math.random() * 2 * Math.PI;
-    return {
-      direction: [ Math.cos(angle), Math.sin(angle) ]
-    };
-  } ],
-  [ "cube", function () {
-    return { persp: 0.9 - Math.random()*Math.random(), unzoom: Math.random()*Math.random() };
-  } ],
-  [ "randomsquares", function () {
-    const size = Math.round(4 + 20 * Math.random());
-    return {
-      size: [ size, size ],
-      smoothness: Math.random()
-    };
-  } ],
-  "undulating burn out",
-  [ "CrossZoom", function () {
-    return { strength: 0.5 * Math.random() };
-  } ],
+  // [ "directionalwipe", function () {
+  //   const angle = Math.random() * 2 * Math.PI;
+  //   return {
+  //     direction: [ Math.cos(angle), Math.sin(angle) ]
+  //   };
+  // } ],
+  // [ "cube", function () {
+  //   return { persp: 0.9 - Math.random()*Math.random(), unzoom: Math.random()*Math.random() };
+  // } ],
+  // [ "randomsquares", function () {
+  //   const size = Math.round(4 + 20 * Math.random());
+  //   return {
+  //     size: [ size, size ],
+  //     smoothness: Math.random()
+  //   };
+  // } ],
+  // "undulating burn out",
+  // [ "CrossZoom", function () {
+  //   return { strength: 0.5 * Math.random() };
+  // } ],
   "swap",
   [ "wind", function () {
     return { size: 0.1+0.2 * Math.random() };

@@ -1,6 +1,6 @@
 {
-  "name": "gl-react-native",
-  "version": "2.26.0",
+  "name": "rokid-gl-react-native",
+  "version": "0.0.1",
   "description": "OpenGL bindings for react-native to implement complex effects over images and components, in the descriptive VDOM paradigm",
   "repository": {
     "type": "git",
@@ -25,5 +25,13 @@
   "dependencies": {
     "invariant": "2.2.0",
     "promise-defer": "1.0.0"
+  },
+  "main": "index.android.js",
+  "directories": {
+    "doc": "docs",
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
